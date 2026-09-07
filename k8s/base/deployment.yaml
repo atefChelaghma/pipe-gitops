@@ -37,7 +37,7 @@ spec:
 
       containers:
         - name: my-website
-          image: ghcr.io/atefchelaghma/digital-experience:sha-c0e4904
+          image: ghcr.io/atefchelaghma/digital-experience:sha-4d77ca9
           imagePullPolicy: IfNotPresent
 
           ports:

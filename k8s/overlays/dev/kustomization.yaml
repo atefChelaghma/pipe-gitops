@@ -11,4 +11,4 @@ patches:
 
 images:
   - name: ghcr.io/atefChelaghma/digital-experience
-  - newTag: sha-c0e4904
+  - newTag: sha-4d77ca9
