@@ -25,6 +25,9 @@ spec:
     spec:
       terminationGracePeriodSeconds: 30
 
+      imagePullSecrets:
+        - name: ghcr-secret
+
       securityContext:
         runAsUser: 1001
         runAsGroup: 1001
