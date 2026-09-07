@@ -5,6 +5,7 @@ namespace: dev
 
 resources:
   - ../../base
+  - ingress.yaml
 
 patches:
   - path: patch.yaml
