@@ -8,3 +8,7 @@ resources:
 
 patches:
   - path: patch.yaml
+
+images:
+  - name: ghcr.io/atefChelaghma/digital-experience
+  - newTag: sha-c0e4904
