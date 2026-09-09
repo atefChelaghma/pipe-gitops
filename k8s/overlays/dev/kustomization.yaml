@@ -11,5 +11,5 @@ patches:
   - path: patch.yaml
 
 images:
-  - name: ghcr.io/atefChelaghma/digital-experience
+  - name: ghcr.io/atefchelaghma/digital-experience
     newTag: sha-df899fa
