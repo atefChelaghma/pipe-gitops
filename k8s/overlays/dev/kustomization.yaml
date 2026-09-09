@@ -11,5 +11,6 @@ patches:
   - path: patch.yaml
 
 images:
-  - name: ghcr.io/atefchelaghma/digital-experience
+  - name: my-website
+    newName: ghcr.io/atefchelaghma/digital-experience
     newTag: sha-df899fa
