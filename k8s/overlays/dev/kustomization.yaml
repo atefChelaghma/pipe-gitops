@@ -12,4 +12,4 @@ patches:
 
 images:
   - name: ghcr.io/atefChelaghma/digital-experience
-    newTag: sha-4d77ca9
+    newTag: sha-df899fa

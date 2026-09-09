@@ -37,7 +37,7 @@ spec:
 
       containers:
         - name: my-website
-          image: ghcr.io/atefchelaghma/digital-experience:sha-4d77ca9
+          image: ghcr.io/atefchelaghma/digital-experience:sha-df899fa
           imagePullPolicy: IfNotPresent
 
           ports:
@@ -62,20 +62,24 @@ spec:
               memory: 512Mi
 
           startupProbe:
-            tcpSocket:
+            httpGet:
+              path: /api/health
               port: http
             failureThreshold: 30
             periodSeconds: 2
+            timeoutSeconds: 2
 
           readinessProbe:
-            tcpSocket:
+            httpGet:
+              path: /api/health
               port: http
             periodSeconds: 10
             timeoutSeconds: 2
             failureThreshold: 3
 
           livenessProbe:
-            tcpSocket:
+            httpGet:
+              path: /api/health
               port: http
             initialDelaySeconds: 10
             periodSeconds: 20
