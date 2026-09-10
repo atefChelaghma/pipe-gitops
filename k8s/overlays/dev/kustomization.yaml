@@ -4,13 +4,16 @@ kind: Kustomization
 namespace: dev
 
 resources:
-  - ../../base
-  - ingress.yaml
+- ../../base
+- ingress.yaml
 
 patches:
-  - path: patch.yaml
+- path: patch.yaml
 
 images:
-  - name: my-website
-    newName: ghcr.io/atefchelaghma/digital-experience
-    newTag: sha-df899fa
+- name: ghcr.io/atefchelaghma/digital-experience
+  newName: ghcr.io/atefchelaghma/digital-experience
+  newTag: sha-fdb31f9
+- name: my-website
+  newName: ghcr.io/atefchelaghma/digital-experience
+  newTag: sha-df899fa
