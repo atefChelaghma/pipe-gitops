@@ -13,7 +13,7 @@ patches:
 images:
 - name: ghcr.io/atefchelaghma/digital-experience
   newName: ghcr.io/atefchelaghma/digital-experience
-  newTag: sha-b855cc1
+  newTag: sha-f4c8e8e
 - name: my-website
   newName: ghcr.io/atefchelaghma/digital-experience
   newTag: sha-df899fa
