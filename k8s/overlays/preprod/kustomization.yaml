@@ -9,3 +9,8 @@ resources:
 
 patches:
   - path: patch.yaml
+
+images:
+- name: ghcr.io/atefchelaghma/digital-experience
+  newName: ghcr.io/atefchelaghma/digital-experience
+  newTag: sha-df899fa
