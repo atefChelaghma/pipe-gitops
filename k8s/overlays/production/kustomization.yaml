@@ -4,14 +4,13 @@ kind: Kustomization
 namespace: production
 
 resources:
-  - ../../base
-  - ingress.yaml
+- ../../base
+- ingress.yaml
 
 patches:
-  - path: patch.yaml
+- path: patch.yaml
 
 images:
-  - name: ghcr.io/atefchelaghma/digital-experience
-    newName: ghcr.io/atefchelaghma/digital-experience
-    newTag: sha-30cbfea
-
+- name: ghcr.io/atefchelaghma/digital-experience
+  newName: ghcr.io/atefchelaghma/digital-experience
+  newTag: sha-bc5d647
