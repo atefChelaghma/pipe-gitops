@@ -6,6 +6,7 @@ namespace: preprod
 resources:
   - ../../base
   - ingress.yaml
+  - ghcr-secret.yaml
 
 patches:
   - path: patch.yaml
