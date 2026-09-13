@@ -7,6 +7,7 @@ resources:
 - ../../base
 - ingress.yaml
 - ghcr-secret.yaml
+- namespace.yaml
 patches:
 - path: patch.yaml
 
