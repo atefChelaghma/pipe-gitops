@@ -25,6 +25,9 @@ spec:
     spec:
       terminationGracePeriodSeconds: 30
 
+      serviceAccountName: my-website
+      automountServiceAccountToken: false
+
       imagePullSecrets:
         - name: ghcr-secret
 
@@ -39,6 +42,12 @@ spec:
         - name: my-website
           image: ghcr.io/atefchelaghma/digital-experience:sha-df899fa
           imagePullPolicy: IfNotPresent
+
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
 
           ports:
             - name: http
