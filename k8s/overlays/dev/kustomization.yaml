@@ -14,4 +14,4 @@ patches:
 images:
 - name: ghcr.io/atefchelaghma/digital-experience
   newName: ghcr.io/atefchelaghma/digital-experience
-  newTag: sha-82f58bc
+  newTag: sha-526fdbf
